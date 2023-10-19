@@ -33,4 +33,9 @@ Objects can be created in two ways:
 - kubectl
   https://kubernetes.io/docs/tasks/tools/
 
+## Source code guidelines 
+1) Imperative approach :
+   - kub-action-01-starting-setup-imperative-approach
 
+2) Declarative approach source code:
+    - kub-action-02-declarative-approach-basics

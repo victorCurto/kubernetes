@@ -1,21 +1,22 @@
 apiVersion: apps/v1
-kind: Deployment
+kind: Deployment #define the type of object that I want to create
 metadata:
   name: second-app-deployment
-spec:
-  replicas: 1
-  selector:
+spec: #specification of the deployment
+  replicas: 3   #create 3 Pod
+  selector: #the selector is mandatory - indicates what Pods are controlled/belongs by this deployment
     matchLabels:
       app: second-app
       tier: backend
-  template:
-    metadata: 
+
+  template:   #define the Pod that we will create
+    metadata: #metadate of the pod
       labels:
         app: second-app
         tier: backend
-    spec: 
+    spec: # specification of the Pod
       containers:
-        - name: second-node
-          image: academind/kub-first-app:2
+        - name: second-node # - defines a list
+          image: vitorgilsilva/kub-first-app:2
         # - name: ...
         #   image: ...

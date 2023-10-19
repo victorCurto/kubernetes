@@ -73,9 +73,8 @@ In the _--type_ we have different options:<br>
 - [ ] NodePort
 - [ ] LoadBalancer
 
-Or
+> Note: Because we use minikube, we need to set an IP to access the app (enable us to access the app externally)
 ```
-//set an IP to the minikube to access the app - enable us to access the app externally !!!!
 $ minikube service <name_of_deployment>
 $ minikube service first-app
 ```
@@ -134,3 +133,32 @@ $ minikube start --nodes=2
 ---
 
 ## Declarative approach
+
+A resource definition in a .yaml file, ex config.yaml <br> 
+Then we just run:
+```
+$ kubectl apply -f config.yaml
+
+// we can apply multiple files
+$ kubectl apply -f=deployment.yaml -f=service.yaml
+```
+
+> Note: Because we use minikube, we need to set an IP to access the app (enable us to access the app externally)
+```
+$ kubectl get services
+$ minikube service backend
+```
+
+### Updating & Deleting Resources
+1) Apply the changes on the .yaml files (ex. deployment.yaml)
+  - number of Pods
+  - docker image
+2) Reapply the .yaml file
+```
+$ kubectl apply -f=deployment.yaml
+```
+
+To delete the created resources:
+```
+$ kubectl delete -f=deployment.yaml -f=service.yaml
+```

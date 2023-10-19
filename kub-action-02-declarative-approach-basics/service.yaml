@@ -5,6 +5,7 @@ metadata:
 spec:
   selector: 
     app: second-app
+    tier: backend
   ports:
     - protocol: 'TCP'
       port: 80
