@@ -24,7 +24,7 @@ $ kubectl help
 Create a folder in your home directory '.kube' and inside create a config file (this file will have the configurations for kubectl to connect to your cluster)
 
 
-### TODO - both of approaches ?
+### In both approaches we rely on Docker images on DockerHub
 ```
 // Create image and publish in dockerHub
 $ docker build -t kub-first-app .
