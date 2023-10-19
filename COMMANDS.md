@@ -67,10 +67,11 @@ $ kubectl delete deployment first-app
 ```
 $ kubectl expose deployment first-app --type=LoadBalancer --port=8080
 ```
-In the --type we have different options:
-    --type=ClusterIP
-    --type=NodePort
-    --type=LoadBalancer
+In the _--type_ we have different options:<br>
+- [x] LoadBalancer    
+- [ ] ClusterIP
+- [ ] NodePort
+- [ ] LoadBalancer
 
 Or
 ```
