@@ -39,3 +39,14 @@ Objects can be created in two ways:
 
 2) Declarative approach source code:
     - kub-action-02-declarative-approach-basics
+
+### To explore
+- kustomize
+https://dev.to/pavanbelagatti/kubernetes-kustomize-tutorial-a-beginner-friendly-developer-guide-322n
+https://kubernetes.io/docs/tasks/manage-kubernetes-objects/kustomization/
+https://devopscube.com/kustomize-tutorial/
+- kustomize vs Helm
+https://faun.pub/helm-vs-kustomize-navigating-kubernetes-configuration-complexity-ae86596c3cf2
+https://antonputra.com/kubernetes/kubernetes-kustomize-tutorial/
+https://www.densify.com/kubernetes-tools/kustomize/
+
